@@ -1,0 +1,14 @@
+com\myValuePack\request\UserRequest.class
+com\myValuePack\persistence\model\UserModel.class
+com\myValuePack\config\MvcConfiguration.class
+com\myValuePack\persistence\dao\IUserRepository.class
+com\myValuePack\persistence\converter\LocalDateTimeAttributeConverter.class
+com\myValuePack\config\JPAConfiguration.class
+com\myValuePack\config\AppInitializer.class
+com\myValuePack\config\ApplicationConfiguration.class
+com\myValuePack\persistence\service\IUserService.class
+com\myValuePack\endpoint\UserEndpoint.class
+com\myValuePack\persistence\service\UserService.class
+com\myValuePack\util\BasicConstants.class
+com\myValuePack\persistence\converter\LocalDateAttributeConverter.class
+com\myValuePack\persistence\converter\LocalTimeAttributeConverter.class
