@@ -1,4 +1,4 @@
-package com.myValuePack.config;
+package com.config;
 
 import org.springframework.context.annotation.Configuration;
 

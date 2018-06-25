@@ -1,4 +1,4 @@
-package com.myValuePack.request;
+package com.request;
 
 public class UserRequest {
 	

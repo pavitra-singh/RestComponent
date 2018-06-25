@@ -1,4 +1,4 @@
-package com.myValuePack.config;
+package com.config;
 
 import java.util.Properties;
 
@@ -13,7 +13,7 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import com.myValuePack.util.BasicConstants;
+import com.util.BasicConstants;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 

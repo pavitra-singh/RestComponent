@@ -1,4 +1,4 @@
-package com.myValuePack.persistence.converter;
+package com.persistence.converter;
 
 import java.sql.Time;
 import java.time.LocalTime;

@@ -1,4 +1,4 @@
-package com.myValuePack.endpoint;
+package com.endpoint;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.myValuePack.persistence.service.IUserService;
-import com.myValuePack.request.UserRequest;
+import com.persistence.service.IUserService;
+import com.request.UserRequest;
 
 @RestController
 @RequestMapping("/api/v1/user")

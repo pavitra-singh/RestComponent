@@ -1,13 +1,13 @@
-package com.myValuePack.persistence.service;
+package com.persistence.service;
 
 import java.time.LocalDateTime;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.myValuePack.persistence.dao.IUserRepository;
-import com.myValuePack.persistence.model.UserModel;
-import com.myValuePack.request.UserRequest;
+import com.persistence.dao.IUserRepository;
+import com.persistence.model.UserModel;
+import com.request.UserRequest;
 
 @Service
 public class UserService implements IUserService{

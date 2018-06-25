@@ -1,4 +1,4 @@
-package com.myValuePack.persistence.model;
+package com.persistence.model;
 
 import java.time.LocalDateTime;
 
@@ -9,7 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import com.myValuePack.persistence.converter.LocalDateTimeAttributeConverter;
+import com.persistence.converter.LocalDateTimeAttributeConverter;
 
 @Entity(name = "tbl_user")
 public class UserModel {	

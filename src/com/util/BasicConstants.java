@@ -1,4 +1,4 @@
-package com.myValuePack.util;
+package com.util;
 
 public class BasicConstants {
 

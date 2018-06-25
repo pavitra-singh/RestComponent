@@ -1,4 +1,4 @@
-package com.myValuePack.persistence.converter;
+package com.persistence.converter;
 
 import java.sql.Date;
 import java.time.LocalDate;
