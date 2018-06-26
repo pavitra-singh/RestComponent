@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.persistence.service.IUserService;
@@ -21,6 +22,7 @@ public class UserEndpoint {
 	private IUserService userService;
 	
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
+	@ResponseBody
 	public List<UserResponse> listUser(){
 		return userService.listOfUsers();
 	}
