@@ -19,13 +19,10 @@ import com.zaxxer.hikari.HikariDataSource;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan({ "com.myValuePack.persistence.service"})
-@EnableJpaRepositories(basePackages = { "com.myValuePack.persistence.dao"})
+@ComponentScan({ "com.persistence.service"})
+@EnableJpaRepositories(basePackages = { "com.persistence.dao"})
 //@PropertySource({ "classpath:database.properties" })
 public class JPAConfiguration {
-
-	/*@Autowired
-	private Environment environment;*/
 
 	public JPAConfiguration() {
 		super();
@@ -36,7 +33,7 @@ public class JPAConfiguration {
 
 		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 		em.setDataSource(dataSource());
-		em.setPackagesToScan(new String[] { "com.myValuePack.persistence.model"});
+		em.setPackagesToScan(new String[] { "com.persistence.model"});
 
 		final HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 		em.setJpaVendorAdapter(vendorAdapter);
@@ -50,7 +47,7 @@ public class JPAConfiguration {
 		HikariConfig dataSourceConfig = new HikariConfig();
 
 		dataSourceConfig.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSourceConfig.setJdbcUrl("jdbc:mysql://localhost:3306/myvaluepack");
+		dataSourceConfig.setJdbcUrl("jdbc:mysql://localhost:3306/pharmacy");
 		dataSourceConfig.setUsername("root");
 		dataSourceConfig.setPassword("root");
 		dataSourceConfig.setIdleTimeout(0);

@@ -22,12 +22,13 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class[] {ApplicationConfiguration.class, MvcConfiguration.class, JPAConfiguration.class};
+		return new Class[] {ApplicationConfiguration.class, MvcConfiguration.class, JPAConfiguration.class,
+				SecurityConfiguration.class};
 	}
 
 	@Override
 	protected String[] getServletMappings() {
 		return new String[] { "/" };
 	}
-
+	
 }

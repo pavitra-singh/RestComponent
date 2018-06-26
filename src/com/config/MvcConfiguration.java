@@ -10,7 +10,7 @@ import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages ={"com.myValuePack", "com.myValuePack.endpoint"})
+@ComponentScan(basePackages ={"com", "com.endpoint"})
 public class MvcConfiguration implements WebMvcConfigurer{
 	
 	

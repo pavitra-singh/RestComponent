@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>MyValuePackTask</groupId>
-  <artifactId>MyValuePackTask</artifactId>
-  <version>1</version>
+  <groupId>RestComponent</groupId>
+  <artifactId>RestComponent</artifactId>
+  <version>1.0</version>
   <packaging>war</packaging>
-  <name>MyValuePack</name>
-  <description>Task </description>
+  <name>RestComponent</name>
+  <description>Rest service Component</description>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -183,8 +183,6 @@
 		    <artifactId>jackson-databind</artifactId>
 		    <version>2.9.5</version>
 		</dependency>
-
-				
 										
 	</dependencies>
   
