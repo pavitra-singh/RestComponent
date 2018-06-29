@@ -1,4 +1,4 @@
-package dto.response;
+package com.dto.response;
 
 public class UserResponse {
 
@@ -24,6 +24,17 @@ public class UserResponse {
 	public void setMobileNumber(String mobileNumber) {
 		this.mobileNumber = mobileNumber;
 	}
+	
+	public UserResponse() {
+		super();
+	}
+	public UserResponse(String name, String emailId, String mobileNumber) {
+		super();
+		this.name = name;
+		this.emailId = emailId;
+		this.mobileNumber = mobileNumber;
+	}
+	
 	
 	
 }

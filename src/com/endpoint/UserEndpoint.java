@@ -9,10 +9,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.dto.request.UserRequest;
+import com.dto.response.UserResponse;
 import com.persistence.service.IUserService;
-
-import dto.request.UserRequest;
-import dto.response.UserResponse;
 
 @RestController
 @RequestMapping("/api/v1/user")
@@ -28,9 +27,8 @@ public class UserEndpoint {
 	}
 	
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
-	public void addUser(@RequestBody UserRequest userRequest){
-		userService.addUser(userRequest);
+	public UserResponse addUser(@RequestBody UserRequest userRequest){
+		return userService.addUser(userRequest);
 	}
-	
 	
 }

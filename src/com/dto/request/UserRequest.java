@@ -1,10 +1,11 @@
-package dto.request;
+package com.dto.request;
 
 public class UserRequest {
 	
 	private String name;
 	private String emailId;
 	private String mobileNumber;
+	private String password;
 	
 	public String getName() {
 		return name;
@@ -23,6 +24,12 @@ public class UserRequest {
 	}
 	public void setMobileNumber(String mobileNumber) {
 		this.mobileNumber = mobileNumber;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	
